@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW-05</title>
+    <title>HW-06</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +22,7 @@
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="logo header-logo" href="./index.html">
-                    Web <span class="logo-part"> Studio </span> </a>
+                    Web<span class="logo-part">Studio</span> </a>
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a class="nav-link current" href="./index.html">Studio</a>
@@ -44,12 +44,79 @@
 
                 </ul>
             </address>
+            <button class="burger-btn" type="button">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger-btn"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                    <svg class="icon-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="nav-list-menu">
+                        <li class="nav-item-menu">
+                            <a class="nav-link-menu current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="nav-item-menu">
+                            <a class="nav-link-menu" href="">Portfolio</a>
+                        </li>
+                        <li class="nav-item-menu">
+                            <a class="nav-link-menu" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="contacts-menu">
+                    <ul class="contacts-list-menu">
+                        <li class="contacts-item-menu">
+                            <a class="contacts-link-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-item-menu">
+                            <a class="contacts-link-menu" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="icons-list-mobile-menu">
+                    <li class="icons-item-mobile-menu">
+                        <a href="https://www.instagram.com" target="_blank" class="icon-link-mobile-menu">
+                            <svg class="team-social-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icons-item-mobile-menu">
+                        <a href="https://x.com" target="_blank" class="icon-link-mobile-menu">
+                            <svg class="team-social-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icons-item-mobile-menu">
+                        <a href="https://www.facebook.com" target="_blank" class="icon-link-mobile-menu">
+                            <svg class="team-social-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icons-item-mobile-menu">
+                        <a href="https://www.linkedin.com" target="_blank" class="icon-link-mobile-menu">
+                            <svg class="team-social-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <!-- section 1 -->
 
-        <section class="title">
+        <section class="title hidden">
             <div class=" container title-container">
                 <h1 class="title-title">Effective Solutions for Your Business</h1>
                 <button class="title-btn" type="button">Order Service</button>
@@ -57,7 +124,7 @@
         </section>
 
         <!-- section 2 -->
-        <section class="advantages">
+        <section class="advantages hidden">
             <div class="container advantages-container">
                 <h2 class="advantages-advantages" hidden>our advantages</h2>
                 <ul class="advantages-list">
@@ -112,7 +179,7 @@
 
         <!-- section 3 -->
 
-        <section class="team">
+        <section class="team hidden">
             <div class="container team-container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
@@ -269,7 +336,7 @@
         </section>
 
         <!-- section 4 -->
-        <section class="portfolio">
+        <section class="portfolio hidden">
             <div class="container portfolio-container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -368,7 +435,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
         <div class="container footercon">
             <div class="pagefooter">
                 <a class="logo footer-logo" href="./index.html">
@@ -431,7 +498,7 @@
         </div>
     </footer>
     <!-- modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
         <div class="modal">
             <button class="close-btn" type="button" data-modal-close>
                 <svg class="icons-close" width="8" height="8">
