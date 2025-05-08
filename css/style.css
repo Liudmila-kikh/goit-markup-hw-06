@@ -528,6 +528,7 @@ button {
 /* section 3 */
 
 .team-container {
+    align-;
     text-align: center;
 }
 
@@ -547,9 +548,11 @@ button {
 .team-item {
     display: block;
     background-color: #FFFFFF;
+    width: 264px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     padding: 0px 0px 32px 0px;
+
 }
 
 .team-card {
@@ -876,7 +879,7 @@ button {
     color: #fff;
 }
 
-.subscribe-title-footer {
+.subscribe-title-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -940,7 +943,7 @@ button {
         text-align: left;
     }
 
-    .subscribe-title-footer {
+    .subscribe-title-text {
 
         text-align: left;
     }
@@ -960,4 +963,44 @@ button {
 
 }
 
-@media screen and (min-width: 1158px) {}
+
+
+@media screen and (min-width: 1158px) {
+    .page-footer {
+        padding: 100px 0;
+
+    }
+
+    .pagefooter {
+        margin-right: 120px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .footer-logo .logo-part {
+        color: #f4f4fd;
+    }
+
+    .footer-logo {
+        margin-bottom: none;
+    }
+
+    .icons-footer {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footercon {
+        align-items: baseline;
+        flex-direction: none;
+        flex-wrap: nowrap;
+        padding: 0;
+
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .footer-text {
+        width: 264px;
+    }
