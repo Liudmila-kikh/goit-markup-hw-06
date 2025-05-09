@@ -175,6 +175,7 @@ button {
         gap: 12px;
     }
 
+
     .contacts-link {
         display: block;
         font-size: 12px;
@@ -229,7 +230,7 @@ button {
 }
 
 /* .is-open */
-.mobile-menu .is-open {
+.mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -280,7 +281,13 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 40px;
+
 }
+
+.link-tel {
+    color: #404bbf;
+}
+
 
 .nav-link-menu.current {
     color: #404bbf;
@@ -293,13 +300,17 @@ button {
     gap: 12px;
 }
 
-.contacts-link-menu {
+.contacts-item-menu {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
     font-style: normal;
+}
+
+.contacts-link-mail {
+    color: #434455;
 }
 
 .icons-list-mobile-menu {
@@ -519,6 +530,13 @@ button {
         gap: 24px;
     }
 
+    .advantages-title {
+
+        font-weight: 500;
+        font-size: 20px;
+        color: #2e2f42;
+    }
+
     .advantages-item {
 
         flex-basis: calc((100% - 3 * 24px) / 4);
@@ -545,12 +563,12 @@ button {
 }
 
 .team-item {
-    display: block;
+
     background-color: #FFFFFF;
     width: 264px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    padding: 0px 0px 32px 0px;
+
 
 }
 
@@ -705,7 +723,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
